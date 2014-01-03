@@ -7,5 +7,5 @@
     <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/educativo</property>
     <property name="hibernate.connection.username">usrPlanilla</property>
     <property name="hibernate.connection.password">1234</property>
-  </session-factory>
+  </session-factory> 
 </hibernate-configuration>

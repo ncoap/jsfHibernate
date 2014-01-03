@@ -25,7 +25,7 @@ import javax.persistence.Temporal;
 public class Persona implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int dni;
+    private int id;
     
     @Column(name="name")
     private String nombre;
@@ -42,12 +42,12 @@ public class Persona implements Serializable {
         this.email = email;
     }
 
-    public int getDni() {
-        return dni;
+    public int getId() {
+        return id;
     }
 
-    public void setDni(int dni) {
-        this.dni = dni;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNombre() {
