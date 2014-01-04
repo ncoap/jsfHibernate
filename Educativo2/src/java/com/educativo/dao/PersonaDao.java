@@ -31,6 +31,21 @@ public class PersonaDao {
         } finally {
             sesion.close();
         }
-
     }
+    
+    public void deletePersona(Persona p){
+        try {
+            sesion = HibernateUtil.getSessionFactory().openSession();
+            trans = sesion.beginTransaction();
+            sesion.delete(p);
+            trans.commit();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            sesion.close();
+        }
+    }
+    
+    
+    
 }
